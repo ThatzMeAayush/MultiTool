@@ -25,14 +25,15 @@ while True:
 
        print('''
 Hello there fellow user! Here's a list of what you can do in this program ->
-Add, Subtract, Multiply or divide 2 numbers (Press 1)
-Add, Subtract, Multiply or divide 3 numbers (Press 2)
-Addition of 1+2+3+4...till n (Press 3)
-Print squares of numbers from 1 to n (Press 4)
-Number guessing game (Press 5)
-Roll a dice (Press 6)
-Message spammer (Press 7)
-Or press 8 to quit
+1 - Add, Subtract, Multiply or divide 2 numbers.
+2 - Add, Subtract, Multiply or divide 3 numbers
+3 - Addition of 1+2+3+4...till n.
+4 - Print squares of numbers from 1 to n.
+5 - Print multiplication table of any number.
+6 - Number guessing game.
+7 - Roll a dice.
+8 - Message spammer.
+Or press 9 to quit
 ''')
        choice_strt = int(input("\n Enter your choice : "))
        if choice_strt == 8:
@@ -160,8 +161,23 @@ Or press 8 to quit
                      i += 1
               
               time.sleep(5)
-
+              continue
+       
        elif choice_strt == 5:
+              
+              os.system('cls')
+
+              print('Print multiplication table of any number.')
+
+              n = int(input('Enter the number: '))
+              i = 1
+
+              while i<=10:
+                     
+                     a = i*n
+                     print('{} * {} = {}'.format(n,i,a))
+
+       elif choice_strt == 6:
 
               os.system('cls')
 
@@ -269,7 +285,7 @@ Enter your option: '''))
                             
                             break
 
-       elif choice_strt == 6:
+       elif choice_strt == 7:
 
               os.system('cls')
 
@@ -292,7 +308,7 @@ Enter your option: '''))
               
               continue
 
-       elif choice_strt == 7:
+       elif choice_strt == 8:
 
               os.system('cls')
 
@@ -317,4 +333,16 @@ Enter your option: '''))
                      i+=1
 
               time.sleep(5)
+              continue
+       
+       elif choice_strt == 9:
+              
+              time.sleep(2)
+              break
+       
+       else:
+              
+              print("Invalid input.")
+
+              time.sleep(2)
               continue
