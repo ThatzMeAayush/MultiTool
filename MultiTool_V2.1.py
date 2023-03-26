@@ -36,9 +36,8 @@ Hello there fellow user! Here's a list of what you can do in this program ->
 Or press 9 to quit
 ''')
        choice_strt = int(input("\n Enter your choice : "))
-       if choice_strt == 8:
-              break
-       elif choice_strt == 1:
+
+       if choice_strt == 1:
               os.system('cls')
 
               print('Add, Subtract, Multiply or divide 2 numbers')
